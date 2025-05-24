@@ -1,16 +1,14 @@
 Package: SyntaxSearch
 Type: Package
-Title: What the Package Does (Title Case)
+Title: R function to filter database by syntax search
 Version: 0.1.0
 Authors@R: c(
-    person(
-      "Jane", "Doe",
-      email = "jane@example.com",
-      role = c("aut", "cre")
-    )
+    person("Denisson", "Silva", , "denissoncsol@gmail.com", c("aut", "cre")),
+    person("Maria", "Cordeiro", , "sirleidylima@gmail.com", "aut")
   )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
+Description: Offer an opensource solution with a graphical interface (GUI) 
+    to select cases in a database through search syntax, consequently helping
+    researchers and students to learn and apply medology.
 License:  GPL (>= 2)
 Depends: R (>= 3.1.2)
 Imports: 
@@ -22,5 +20,7 @@ Imports:
   dplyr,
   tm
 Encoding: UTF-8
+URL: https://syntax.shinyapps.io/SintaxSeach/
+BugReports: https://github.com/silvadenisson/SyntaxSearch/issues
 LazyData: true
 RoxygenNote: 7.3.2
