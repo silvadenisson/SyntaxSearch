@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SyntaxSearch</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Upload de Arquivo CSV</h1>
+
+    <form id="shiny-upload-form" enctype="multipart/form-data">
+      <!-- File Input -->
+      <div class="form-group">
+        {{arquivo}} <!-- Aqui o Shiny vai substituir pelo fileInput -->
+      </div>
+
+      <!-- Header Checkbox -->
+      <div class="form-group">
+        {{chekHeader}} <!-- Aqui o Shiny vai substituir pelo checkbox -->
+      </div>
+
+      <!-- Separator Radio -->
+      <div class="form-group">
+        {{separator}} <!-- Aqui o Shiny vai substituir pelos radio buttons do separador -->
+      </div>
+
+      <!-- Quote Radio -->
+      <div class="form-group">
+        {{quotes}} <!-- Aqui o Shiny vai substituir pelos radio buttons para quote -->
+      </div>
+    </form>
+
+    <!-- Mensagem de Status -->
+    <div id="mensagem">
+      {{mensagem}} <!-- Aqui o Shiny vai substituir com a mensagem de status -->
+    </div>
+
+    <!-- Tabela para exibição dos dados -->
+    <div class="form-group">
+      <h3>Visualizar Dados:</h3>
+      {{tabela}} <!-- Aqui o Shiny vai substituir pela tabela -->
+    </div>
+  </div>
+</body>
+</html>

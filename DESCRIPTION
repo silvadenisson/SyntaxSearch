@@ -1,0 +1,26 @@
+Package: SyntaxSearch
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Jane", "Doe",
+      email = "jane@example.com",
+      role = c("aut", "cre")
+    )
+  )
+Description: More about what it does (maybe more than one line).
+    Continuation lines should be indented.
+License:  GPL (>= 2)
+Depends: R (>= 3.1.2)
+Imports: 
+  shiny,
+  DT,
+  wordcloud2,
+  stringr,
+  stringi,
+  dplyr,
+  tm
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
