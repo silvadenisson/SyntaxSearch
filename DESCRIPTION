@@ -20,7 +20,7 @@ Imports:
   dplyr,
   tm
 Encoding: UTF-8
-URL: https://syntax.shinyapps.io/SintaxSeach/
+URL: https://syntax.shinyapps.io/SyntaxSearch/
 BugReports: https://github.com/silvadenisson/SyntaxSearch/issues
 LazyData: true
 RoxygenNote: 7.3.2

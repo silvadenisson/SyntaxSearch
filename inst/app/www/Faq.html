@@ -3,64 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SyntaxSearch</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+    <title>SyntaxSearch</title>
 </head>
 <body>
-  <div class="container">
-    <h1>Upload de Arquivo CSV</h1>
+  <div class="container-fluid">
+ <header>
+      <img src="logo2.png" alt="SyntaxSearch Logo"/>
+      <nav>
+        <a href="./" class="btn btn-primary">Home</a>
+        <a href="sobre.html" class="btn btn-primary">Sobre</a>
+        <a href="faq.html" class="btn btn-primary">FAQ</a>
+      </nav>
+    </header>
 
-    <form id="shiny-upload-form" enctype="multipart/form-data">
-      <!-- File Input -->
-      <div class="form-group">
-        {{arquivo}} <!-- Aqui o Shiny vai substituir pelo fileInput -->
-      </div>
+<div class="box">
+<h1> Faq </h1>
 
-      <!-- Header Checkbox -->
-      <div class="form-group">
-        {{chekHeader}} <!-- Aqui o Shiny vai substituir pelo checkbox -->
-      </div>
 
-      <!-- Separator Radio -->
-      <div class="form-group">
-        {{separator}} <!-- Aqui o Shiny vai substituir pelos radio buttons do separador -->
-      </div>
 
-      <!-- Quote Radio -->
-      <div class="form-group">
-        {{quotes}} <!-- Aqui o Shiny vai substituir pelos radio buttons para quote -->
-      </div>
-    </form>
+<p> Quais são os operadores booleanos permitidos?<br>
+       - OR <br>
+       - AND</p>
 
-    <!-- Mensagem de Status -->
-    <div id="mensagem">
-      {{mensagem}} <!-- Aqui o Shiny vai substituir com a mensagem de status -->
-    </div>
+<p> Para que serve a SyntaxSearch?<br>
+      - Essa ferramenta pode ser considerada como um highlight numa base de dados, cujo objetivo é evidenciar informações relevantes em determinados contextos e materializar em palavras/itens lexicais informações, com o objetivo de aprimorar a busca, a coleta e a análise dos dados.</p>
 
-    <!-- Tabela para exibição dos dados -->
-    <div class="form-group">
-      <h3>Visualizar Dados:</h3>
+<p> Como os operadores booleanos são aplicados na ferramenta?<br>
+      - Os operadores booleanos são combinados com itens lexicais selecionados pelo usuário, permitindo construir expressões que incluam, excluam ou relacionem termos com base em sua presença nos dados analisados.</p>
 
-Faq
+<p> Quais tipos de dados podem ser analisados com a SyntaxSearch? <br>
+      - A ferramenta pode ser aplicada a bases textuais, como planilhas, bases extraídas de plataformas digitais e conjuntos de mensagens, desde que organizadas em formato compatível com leitura de texto estruturado. Atualmente o formato permitido é: .csv</p>
 
-</p> Quais são os operadores booleanos permitidos?
-       - OR
-       - AND
+<p> A SyntaxSearch permite identificar padrões linguísticos?<br>
+      - Sim. A combinação entre itens lexicais e operadores booleanos possibilita localizar recorrências, coocorrências e relações entre termos, o que contribui para a identificação de padrões temáticos e discursivos em conjuntos de dados textuais.</p>
 
-</p> Para que serve a SyntaxSearch?
-      - Essa ferramenta pode ser considerada como um highlight numa base de dados, cujo objetivo é evidenciar informações relevantes em determinados contextos e materializar em palavras/itens lexicais informações, com o objetivo de aprimorar a busca, a coleta e a análise dos dados.
+<p>Tem limite no tamanho do arquivo carregado?<br>
+  - Sim, de 5mb. Para arquivos maior recomendamos usar offline, a partir da linguagem R.
+</p>
 
-</p> Como os operadores booleanos são aplicados na ferramenta?
-      - Os operadores booleanos são combinados com itens lexicais selecionados pelo usuário, permitindo construir expressões que incluam, excluam ou relacionem termos com base em sua presença nos dados analisados.
 
-</p> Quais tipos de dados podem ser analisados com a SyntaxSearch?
-      - A ferramenta pode ser aplicada a bases textuais, como planilhas, bases extraídas de plataformas digitais e conjuntos de mensagens, desde que organizadas em formato compatível com leitura de texto estruturado. Atualmente os formatos permitidos são: .csv e .xlsx
+<p>
+  É possível usar ele offline?<br>
+  - Sim, a partir da linguagem R, você pode instalar o pacote disponível no github,
+  usando devtools::install_github("silvadenisson/SyntaxSearch") <br>
+  library(SyntaxSearch)<br>
+  run_syntaxsearch()
 
-</p> A SyntaxSearch permite identificar padrões linguísticos?
-      - Sim. A combinação entre itens lexicais e operadores booleanos possibilita localizar recorrências, coocorrências e relações entre termos, o que contribui para a identificação de padrões temáticos e discursivos em conjuntos de dados textuais.
+</p>
 
-      {{tabela}} <!-- Aqui o Shiny vai substituir pela tabela -->
-    </div>
-  </div>
+</div>
+<footer style="text-align:center; padding:15px; background:#eeeeee; font-size:14px;">
+      <p>SyntaxSearch desenvolvido por Maria Sirleidy Cordeiro e Denisson Silva</p>
+      <p>Como citar: <br> Denisson Silva, & Cordeiro, M. S. (2025). silvadenisson/SyntaxSearch: pacote R syntaxsearch (syntaxsearch). Zenodo. <a href="https://doi.org/10.5281/zenodo.15511938" target="_blank">https://doi.org/10.5281/zenodo.15511938</a></p>
+    </footer>
+</div>
 </body>
 </html>

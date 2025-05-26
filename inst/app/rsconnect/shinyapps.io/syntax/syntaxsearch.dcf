@@ -1,0 +1,12 @@
+name: syntaxsearch
+title: syntaxsearch
+username: syntax
+account: syntax
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 14829294
+bundleId: 10346876
+url: https://syntax.shinyapps.io/syntaxsearch/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

@@ -3,15 +3,16 @@
 
 pacote para o R de filtro de base a partir de sintax de buscas
 
-Voce pode acessar em modo online: [https://syntax.shinyapps.io/SintaxSeach/](https://syntax.shinyapps.io/SintaxSeach/)
+Voce pode acessar em modo online: [https://syntax.shinyapps.io/syntaxsearch/](https://syntax.shinyapps.io/syntaxsearch/)
 
-ou instalanto o pacote no R, recomendável em caso de base dados que supere o limite de processamento online.
+ou instalanto o pacote no R, recomendável em caso de base dados que supere o limite de processamento online, que é de 5mb.
 
-You can install the development version of SyntaSearch from GitHub with:
+Você pode instalar a versão de desenvolvimento do SyntaxSearch direto do GitHub, com:
 
+``` r
 # install.packages("devtools")
-devtools::install_github("silvadenisson/SyntaSearch")
-
+devtools::install_github("silvadenisson/SyntaxSearch")
+```
 
 ``` r
 library(SyntaSearch)

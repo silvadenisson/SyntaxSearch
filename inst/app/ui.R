@@ -7,6 +7,7 @@ library(wordcloud2)
 ui <- fluidPage(
   tags$head(
     tags$link(href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap", rel="stylesheet"),
+    tags$link(href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css", rel="stylesheet"),
     tags$style(HTML("
       body {
         font-family: 'Inter', sans-serif;
@@ -105,7 +106,7 @@ ui <- fluidPage(
       tags$a(href = "sobre.html",
                   class = "btn btn-primary",
                   "Sobre"),
-      tags$a(href = "#",
+      tags$a(href = "faq.html",
              class = "btn btn-primary",
              "FAQ")
     )
@@ -154,6 +155,10 @@ ui <- fluidPage(
   # Rodapé
   tags$footer(
     style = "text-align:center; padding:15px; background:#eeeeee; font-size:14px;",
-    tags$a(href = "#", "SyntaxSearch desenvolvido por Maria Sirleidy Cordeiro e Denisson Silva")
+    tags$p("SyntaxSearch desenvolvido por Maria Sirleidy Cordeiro e Denisson Silva"),
+    tags$p("Como citar:",   tags$br(),
+           "Denisson Silva, & Cordeiro, M. S. (2025). silvadenisson/SyntaxSearch: pacote R syntaxsearch (syntaxsearch). Zenodo.",
+           tags$a("https://doi.org/10.5281/zenodo.15511938", href = "https://doi.org/10.5281/zenodo.15511938", target="_blank")
+           )
   )
 )
